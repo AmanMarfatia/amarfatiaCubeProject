@@ -12,11 +12,6 @@ def open_db(filename: str) -> Tuple[sqlite3.Connection, sqlite3.Cursor]:
     return db_connection, cursor
 
 
-def close_db(connection: sqlite3.Connection):
-    connection.commit()  # make sure any changes get saved
-    connection.close()
-
-
 def create_entries_table(cursor: sqlite3.Cursor):
     create_statement = """CREATE TABLE IF NOT EXISTS WuFooData(
     entryID INTEGER PRIMARY KEY,
@@ -39,6 +34,9 @@ def create_entries_table(cursor: sqlite3.Cursor):
     created_date TEXT,
     created_by TEXT);"""
     cursor.execute(create_statement)
+def close_db(connection: sqlite3.Connection):
+    connection.commit()  # make sure any changes get saved
+    connection.close()
 
 
 def add_entries_to_db(cursor: sqlite3.Cursor, entries_data: list[dict]):
