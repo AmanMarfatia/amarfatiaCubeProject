@@ -18,7 +18,7 @@ def close_db(connection: sqlite3.Connection):
 
 
 def create_entries_table(cursor: sqlite3.Cursor):
-    create_statement = """CREATE TABLE IF NOT EXISTS WuFooData(
+    create_statement = """Insert INTO 'database'(
     entryID INTEGER PRIMARY KEY,
     prefix TEXT NOT NULL,
     first_name TEXT NOT NULL,
