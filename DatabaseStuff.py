@@ -2,8 +2,12 @@ import sqlite3
 from typing import Tuple
 
 
+class Users:
+    pass
+
+
 def open_db(filename: str) -> Tuple[sqlite3.Connection, sqlite3.Cursor]:
-    db_connection = sqlite3.connect(database.sqlite3)  # connect to existing DB or create new one
+    db_connection = sqlite3.connect('/Users/amanmarfatia/PycharmProjects/amarfatiaCubeProject/cube_database.sqlite')  # connect to existing DB or create new one
     cursor = db_connection.cursor()  # get ready to read/write data
     return db_connection, cursor
 
@@ -28,7 +32,8 @@ def create_entries_table(cursor: sqlite3.Cursor):
     head_coach TEXT,
     waterboys TEXT,
     doctor TEXT,
-    eighteen_thru_thirty TEXT,
+    eighteen_thru_twentyfive TEXT,
+    twentyfive_thru_thirty TEXT,
     thirty_thru_forty TEXT,
     forty_thru_fifty TEXT,
     created_date TEXT,
@@ -39,7 +44,7 @@ def create_entries_table(cursor: sqlite3.Cursor):
 def add_entries_to_db(cursor: sqlite3.Cursor, entries_data: list[dict]):
     # the insert or ignore syntax will insert if the primary key isn't in use or ignore if the primary key is in the DB
     insertStatement = """INSERT OR IGNORE INTO WuFooData (entryID, prefix, first_name, last_name, logo, team_name, email, jersey_color,
-    phone_number, coach, headcoach, waterboys, doctor, eighteen_thru_twentyfive, twentyfive_thru_thirsty, thirty_thru_forty, forty_thru_fifty,
+    phone_number, coach, head_coach, waterboys, doctor, eighteen_thru_twentyfive, twentyfive_thru_thirsty, thirty_thru_forty, forty_thru_fifty,
      created_date, created_by) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
     for entry in entries_data:
         entry_values = list(

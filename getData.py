@@ -1,8 +1,8 @@
 import requests
 import sys
 from requests.auth import HTTPBasicAuth
-from secrets import wufoo_key
-
+#from secrets import wufoo_key
+wufoo_key = "G0QW-6YXP-H7LX-TN6S"
 
 def get_wufoo_data() -> dict:
     url = "https://comp490project.wufoo.com/api/v3/forms/2023-ultimate-frisbee-tournament/entries/json"
