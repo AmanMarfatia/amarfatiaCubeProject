@@ -33,7 +33,7 @@ class Application:
         GLabel_prefix["font"] = ft
         GLabel_prefix["fg"] = "#333333"
         GLabel_prefix["justify"] = "center"
-        GLabel_prefix["text"] = "label"
+        GLabel_prefix["text"] = "Prefix"
         GLabel_prefix.place(x=440,y=30,width=70,height=25)
 
         GLabel_first_name=tk.Label(root)
@@ -41,7 +41,7 @@ class Application:
         GLabel_first_name["font"] = ft
         GLabel_first_name["fg"] = "#333333"
         GLabel_first_name["justify"] = "center"
-        GLabel_first_name["text"] = "label"
+        GLabel_first_name["text"] = "First Name"
         GLabel_first_name.place(x=300,y=70,width=70,height=25)
 
         GLabel_last_name=tk.Label(root)
