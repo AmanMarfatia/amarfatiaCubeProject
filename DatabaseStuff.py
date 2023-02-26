@@ -18,7 +18,7 @@ def close_db(connection: sqlite3.Connection):
 
 
 def create_entries_table(cursor: sqlite3.Cursor):
-    create_statement = """Insert INTO 'database'(
+    create_statement = """CREATE TABLE IF NOT EXISTS WuFooData(
     entryID INTEGER PRIMARY KEY,
     prefix TEXT NOT NULL,
     first_name TEXT NOT NULL,
@@ -43,9 +43,9 @@ def create_entries_table(cursor: sqlite3.Cursor):
 
 def add_entries_to_db(cursor: sqlite3.Cursor, entries_data: list[dict]):
     # the insert or ignore syntax will insert if the primary key isn't in use or ignore if the primary key is in the DB
-    insertStatement = """INSERT INTO database (entryID, prefix, first_name, last_name, logo, team_name, email, jersey_color,
+    insertStatement = """INSERT OR IGNORE INTO WuFooData (entryID, prefix, first_name, last_name, logo, team_name, email, jersey_color,
     phone_number, coach, head_coach, waterboys, doctor, eighteen_thru_twentyfive, twentyfive_thru_thirty, thirty_thru_forty, forty_thru_fifty,
-     created_date, created_by) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
+     created_date, created_by) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
     for entry in entries_data:
         entry_values = list(
             entry.values()
