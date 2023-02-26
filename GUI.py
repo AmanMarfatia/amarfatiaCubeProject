@@ -25,7 +25,7 @@ class Application:
         GLabel_entryID["font"] = ft
         GLabel_entryID["fg"] = "#333333"
         GLabel_entryID["justify"] = "center"
-        GLabel_entryID["text"] = "EnteryID"
+        GLabel_entryID["text"] = "EntryID"
         GLabel_entryID.place(x=300,y=30,width=70,height=25)
 
         GLabel_prefix=tk.Label(root)
