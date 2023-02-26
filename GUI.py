@@ -49,7 +49,7 @@ class Application:
         GLabel_last_name["font"] = ft
         GLabel_last_name["fg"] = "#333333"
         GLabel_last_name["justify"] = "center"
-        GLabel_last_name["text"] = "label"
+        GLabel_last_name["text"] = "Last Name"
         GLabel_last_name.place(x=440,y=70,width=70,height=25)
 
         GLabel_logo=tk.Label(root)
@@ -57,7 +57,7 @@ class Application:
         GLabel_logo["font"] = ft
         GLabel_logo["fg"] = "#333333"
         GLabel_logo["justify"] = "center"
-        GLabel_logo["text"] = "label"
+        GLabel_logo["text"] = "Logo"
         GLabel_logo.place(x=300,y=110,width=70,height=25)
 
         GLabel_team_name=tk.Label(root)
@@ -65,7 +65,7 @@ class Application:
         GLabel_team_name["font"] = ft
         GLabel_team_name["fg"] = "#333333"
         GLabel_team_name["justify"] = "center"
-        GLabel_team_name["text"] = "label"
+        GLabel_team_name["text"] = "Team Name"
         GLabel_team_name.place(x=300,y=160,width=70,height=25)
 
         GLabel_email=tk.Label(root)
@@ -73,7 +73,7 @@ class Application:
         GLabel_email["font"] = ft
         GLabel_email["fg"] = "#333333"
         GLabel_email["justify"] = "center"
-        GLabel_email["text"] = "label"
+        GLabel_email["text"] = "Email"
         GLabel_email.place(x=300,y=200,width=70,height=25)
 
         GLabel_jersey_Color=tk.Label(root)
@@ -81,7 +81,7 @@ class Application:
         GLabel_jersey_Color["font"] = ft
         GLabel_jersey_Color["fg"] = "#333333"
         GLabel_jersey_Color["justify"] = "center"
-        GLabel_jersey_Color["text"] = "label"
+        GLabel_jersey_Color["text"] = "Jersey Color"
         GLabel_jersey_Color.place(x=300,y=250,width=70,height=25)
 
         GLabel_phone_number=tk.Label(root)
@@ -89,7 +89,7 @@ class Application:
         GLabel_phone_number["font"] = ft
         GLabel_phone_number["fg"] = "#333333"
         GLabel_phone_number["justify"] = "center"
-        GLabel_phone_number["text"] = "label"
+        GLabel_phone_number["text"] = "Phone Number"
         GLabel_phone_number.place(x=300,y=290,width=70,height=25)
 
         GCheckBox_coach=tk.Checkbutton(root)
@@ -97,7 +97,7 @@ class Application:
         GCheckBox_coach["font"] = ft
         GCheckBox_coach["fg"] = "#333333"
         GCheckBox_coach["justify"] = "center"
-        GCheckBox_coach["text"] = "CheckBox"
+        GCheckBox_coach["text"] = "Coach"
         GCheckBox_coach.place(x=450,y=120,width=70,height=25)
         GCheckBox_coach["offvalue"] = "0"
         GCheckBox_coach["onvalue"] = "1"
@@ -108,7 +108,7 @@ class Application:
         GCheckBox_head_coach["font"] = ft
         GCheckBox_head_coach["fg"] = "#333333"
         GCheckBox_head_coach["justify"] = "center"
-        GCheckBox_head_coach["text"] = "CheckBox"
+        GCheckBox_head_coach["text"] = "Head Coach"
         GCheckBox_head_coach.place(x=450,y=160,width=70,height=25)
         GCheckBox_head_coach["offvalue"] = "0"
         GCheckBox_head_coach["onvalue"] = "1"
@@ -119,7 +119,7 @@ class Application:
         GCheckBox_waterboys["font"] = ft
         GCheckBox_waterboys["fg"] = "#333333"
         GCheckBox_waterboys["justify"] = "center"
-        GCheckBox_waterboys["text"] = "CheckBox"
+        GCheckBox_waterboys["text"] = "Waterboys"
         GCheckBox_waterboys.place(x=450,y=200,width=70,height=25)
         GCheckBox_waterboys["offvalue"] = "0"
         GCheckBox_waterboys["onvalue"] = "1"
@@ -130,7 +130,7 @@ class Application:
         GCheckBox_doctor["font"] = ft
         GCheckBox_doctor["fg"] = "#333333"
         GCheckBox_doctor["justify"] = "center"
-        GCheckBox_doctor["text"] = "CheckBox"
+        GCheckBox_doctor["text"] = "Doctor"
         GCheckBox_doctor.place(x=450,y=240,width=70,height=25)
         GCheckBox_doctor["offvalue"] = "0"
         GCheckBox_doctor["onvalue"] = "1"
@@ -141,7 +141,7 @@ class Application:
         GCheckBox_eighteen_thru_thirty["font"] = ft
         GCheckBox_eighteen_thru_thirty["fg"] = "#333333"
         GCheckBox_eighteen_thru_thirty["justify"] = "center"
-        GCheckBox_eighteen_thru_thirty["text"] = "CheckBox"
+        GCheckBox_eighteen_thru_thirty["text"] = "18-30"
         GCheckBox_eighteen_thru_thirty.place(x=450,y=280,width=70,height=25)
         GCheckBox_eighteen_thru_thirty["offvalue"] = "0"
         GCheckBox_eighteen_thru_thirty["onvalue"] = "1"
@@ -152,7 +152,7 @@ class Application:
         GCheckBox_thrity_thru_forty["font"] = ft
         GCheckBox_thrity_thru_forty["fg"] = "#333333"
         GCheckBox_thrity_thru_forty["justify"] = "center"
-        GCheckBox_thrity_thru_forty["text"] = "CheckBox"
+        GCheckBox_thrity_thru_forty["text"] = "30-40"
         GCheckBox_thrity_thru_forty.place(x=450,y=320,width=70,height=25)
         GCheckBox_thrity_thru_forty["offvalue"] = "0"
         GCheckBox_thrity_thru_forty["onvalue"] = "1"
@@ -163,7 +163,7 @@ class Application:
         GCheckBox_forty_thru_fifty["font"] = ft
         GCheckBox_forty_thru_fifty["fg"] = "#333333"
         GCheckBox_forty_thru_fifty["justify"] = "center"
-        GCheckBox_forty_thru_fifty["text"] = "CheckBox"
+        GCheckBox_forty_thru_fifty["text"] = "40-50"
         GCheckBox_forty_thru_fifty.place(x=450,y=360,width=70,height=25)
         GCheckBox_forty_thru_fifty["offvalue"] = "0"
         GCheckBox_forty_thru_fifty["onvalue"] = "1"
