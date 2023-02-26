@@ -3,9 +3,7 @@ from typing import Tuple
 
 
 def open_db(filename: str) -> Tuple[sqlite3.Connection, sqlite3.Cursor]:
-    db_connection = sqlite3.connect(
-        filename
-    )  # connect to existing DB or create new one
+    db_connection = sqlite3.connect(database.sqlite3)  # connect to existing DB or create new one
     cursor = db_connection.cursor()  # get ready to read/write data
     return db_connection, cursor
 
