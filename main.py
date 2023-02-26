@@ -2,7 +2,7 @@ from DatabaseStuff import open_db, close_db
 import DatabaseStuff
 import getData
 
-db_name = "cubesProject.sqlite"
+db_name = 'database.sqlite3'
 
 
 def main():
